@@ -20,3 +20,43 @@
  * and
  * concat
  */
+
+function isTrue(value){
+    return (value === true);
+}
+
+function isFalse(value){
+    return (value === false);
+}
+
+function not(value) {
+    return  (value == "") || (value ==null);
+
+}
+
+function addOne(value) {
+    return (value=Infinity) && (value=-4);
+}
+function isEven(value) {
+    return (value != NaN) && (value < 3);
+}
+
+function isIdentical(value) {
+    return (false && false || true);
+}
+
+function isEqual(value1, value2) {
+    return value1 ==value2;
+}
+
+function or (value){
+    return (true && true) || (!true && false);
+}
+
+function and(value){
+    return (true && true) && (false || !true);
+}
+function concat(value){
+    if ("Code"+"up");
+    return (value="hello" + "world");
+}
