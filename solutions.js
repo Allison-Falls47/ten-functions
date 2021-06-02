@@ -30,33 +30,31 @@ function isFalse(value){
 }
 
 function not(value) {
-    return  (value == "") || (value ==null);
-
+    return !value;
 }
 
 function addOne(value) {
-    return (value=Infinity) && (value=-4);
+    return Number(value) + 1;
 }
 function isEven(value) {
-    return (value != NaN) && (value < 3);
+    return (parseFloat(value) % 2) === 0;
 }
 
-function isIdentical(value) {
-    return (false && false || true);
+function isIdentical(value1, value2) {
+    return value1 === value2 ;
 }
 
 function isEqual(value1, value2) {
-    return value1 ==value2;
+    return value1 == value2;
 }
 
-function or (value){
-    return (true && true) || (!true && false);
+function or (value1, value2){
+    return value1 || value2;
 }
 
-function and(value){
-    return (true && true) && (false || !true);
+function and(value1, value2){
+    return value1 && value2;
 }
-function concat(value){
-    if ("Code"+"up");
-    return (value="hello" + "world");
+function concat(value1, value2){
+    return value1.toString() + value2.toString();
 }
